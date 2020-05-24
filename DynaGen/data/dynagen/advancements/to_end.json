@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "To End": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "the_end"
+            }
+        }
+    },
+    "rewards": {
+        "function": "dynagen:end_warp"
+    }
+}

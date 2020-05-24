@@ -1,0 +1,7 @@
+{
+	"comment": "Guarantees submodules load after Dynagen does and makes it so they don't need a minecraft namespaced folder",
+	"values": [
+		"dynagen_example:modulo_test/init",
+		"dynagen_utils:tiny_hex_test/init"
+	]
+}

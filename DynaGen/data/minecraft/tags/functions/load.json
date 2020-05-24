@@ -1,0 +1,7 @@
+{
+	"values": [
+		"minecraft:gamerule",
+		"dynagen:init",
+		"#dynagen:load_modules"
+	]
+}

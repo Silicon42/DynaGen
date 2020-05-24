@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "to Overworld": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "overworld"
+            }
+        },
+        "to Nether": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "the_nether"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "to Overworld",
+            "to Nether"
+        ]
+    ],
+    "rewards": {
+        "function": "dynagen:portal_warp"
+    }
+}

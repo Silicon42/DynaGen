@@ -39,7 +39,9 @@ Note that currently this pack is in the alpha stage, and thus many things in it 
 # Contacts and Links
 
 [Reddit](https://old.reddit.com/user/Silicon42/)
+
 [Youtube](https://www.youtube.com/channel/UCRyzxobRKZqlDjKd4fByT8A/)
+
 [Minecraft Forum](https://www.minecraftforum.net/members/Silicon42)
 
 

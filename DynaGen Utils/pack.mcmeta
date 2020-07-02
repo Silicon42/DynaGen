@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 5,
+        "description": "A pack for DynaGen devs. Contains several functions mostly used for debugging"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 5,
+        "description": "A pack for DynaGen module devs. Preprocesses complex structures for use with DynaGen"
+    }
+}

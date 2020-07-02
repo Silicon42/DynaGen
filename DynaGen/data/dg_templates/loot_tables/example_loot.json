@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 16,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "gold_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "iron_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "diamond"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "emerald"
+          }
+        ]
+      }
+    ]
+  }

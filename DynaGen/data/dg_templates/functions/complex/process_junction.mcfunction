@@ -4,8 +4,8 @@
 data modify entity @s Pos set from storage dynagen: JunctionList[0].Pos
 
 #match the pool to the matching function
-execute if data storage dynagen: JunctionList[0].Data{Pool:"corridor"} run function dg_templates:complex/pools/choose_corridor
-execute if data storage dynagen: JunctionList[0].Data{Pool:"room"} run function dg_templates:complex/pools/choose_room
+execute if data storage dynagen: JunctionList[0].Data{pool:"dg_template:corridor"} run function dg_templates:complex/pools/choose_corridor
+execute if data storage dynagen: JunctionList[0].Data{pool:"dg_template:room"} run function dg_templates:complex/pools/choose_room
 
 #decrement and call next iteration if applicable
 data remove storage dynagen: JunctionList[0]

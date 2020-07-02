@@ -9,14 +9,6 @@
         "item": {
           "item": "item_frame",
           "nbt": "{EntityTag:{Tags:[DynagenSaveTool]}}"
-        },
-        "location": {
-          "block": {
-            "block": "structure_block",
-            "state": {
-              "mode": "save"
-            }
-          }
         }
       }
     }

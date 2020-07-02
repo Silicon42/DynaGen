@@ -58,3 +58,4 @@ setblock ~ ~ ~ redstone_block
 setblock ~ ~ ~ air
 data modify block ^ ^ ^-1 name set from storage dynagen_creator: SaveBlock.name
 data modify block ^ ^ ^-1 ignoreEntities set from storage dynagen_creator: SaveBlock.ignoreEntities
+data merge block ^ ^ ^-1 {mode:"SAVE"}

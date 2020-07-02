@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Dynagen Save Tool\"}',EntityTag:{Invisible:1b,Tags:[\"DynagenSaveTool\"]}}}"
+                "tag": "{display:{Name:'{\"text\":\"Dynagen Save Tool\"}'},EntityTag:{Tags:[\"DynagenSaveTool\"]}}"
               }
             ]
           }
@@ -24,7 +24,22 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomName:'{\"text\":\"Convert to Auto\"}'}"
+                "tag": "{display:{Name:'{\"text\":\"Convert To Auto\"}'}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jukebox",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Root Junction\"}'},RecordItem:{id:\"minecraft:book\",Count:1b,tag:{RootJunction:1b}}}"
               }
             ]
           }

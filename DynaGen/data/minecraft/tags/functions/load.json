@@ -2,6 +2,7 @@
 	"values": [
 		"minecraft:gamerule",
 		"dynagen:init",
+		"dynagen_creator:init",
 		"#dynagen:load_modules"
 	]
 }

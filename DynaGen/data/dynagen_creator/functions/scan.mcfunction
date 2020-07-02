@@ -19,3 +19,4 @@ execute if score #zIndex DGCvar matches 1.. positioned as @s run function dynage
 
 #finish Junction processing since Master Lists have been completed
 execute if block ~ ~ ~ minecraft:jigsaw run function dynagen_creator:convert_to_junction
+execute if block ~ ~ ~ minecraft:jukebox{RecordItem:{tag:{RootJunction:1b}}} run function dynagen_creator:convert_to_root_junction

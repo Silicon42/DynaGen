@@ -1,0 +1,61 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Dynagen Save Tool\"}',EntityTag:{Invisible:1b,Tags:[\"DynagenSaveTool\"]}}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chain_command_block",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomName:'{\"text\":\"Convert to Auto\"}'}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:structure_block"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:structure_void"
+          }
+        ]
+      }
+    ]
+  }

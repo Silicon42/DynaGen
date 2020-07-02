@@ -11,5 +11,5 @@ execute store result score #xChunk DGvar run data get storage dynagen: temp.x .0
 execute store result score #zChunk DGvar run data get storage dynagen: temp.z .0625
 
 #calls any external modifications that other pack creators want to make
-scoreboard players set #seedCalcdBool DGvar 0
+scoreboard players set #chunkSeedCalcd DGvar 0
 function #dynagen:chunk_pop

@@ -1,0 +1,1 @@
+give @p minecraft:item_frame{display:{Name:'{"text":"DG save tool"}'},EntityTag:{Invisible:1b,Tags:["DynagenSaveTool"]}}

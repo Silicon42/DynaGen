@@ -1,0 +1,2 @@
+# DynaGen Creator
+Dynagen Creator is a pack for those who want to make structures and modules compatible with Dynagen. It preprocesses loot containers, randomized structures, oversized structures, and structure and entity rotation to work with the structure loading framework.

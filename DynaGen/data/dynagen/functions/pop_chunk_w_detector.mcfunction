@@ -1,7 +1,7 @@
 #handles chunk popluation when in the cental 7*7 outer ring of a completely new area
 
 #calls any external modifications that other pack creators want to make
-scoreboard players set #seedCalcdBool DGvar 0
+scoreboard players set #chunkSeedCalcd DGvar 0
 function #dynagen:chunk_pop
 
 #sets up a new chunk load detector

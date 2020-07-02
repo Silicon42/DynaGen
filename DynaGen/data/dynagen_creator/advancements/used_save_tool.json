@@ -1,0 +1,24 @@
+{
+  "rewards": {
+    "function": "dynagen_creator:used_save_tool"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "item": "item_frame",
+          "nbt": "{EntityTag:{Tags:[DynagenSaveTool]}}"
+        },
+        "location": {
+          "block": {
+            "block": "structure_block",
+            "state": {
+              "mode": "save"
+            }
+          }
+        }
+      }
+    }
+  }
+}

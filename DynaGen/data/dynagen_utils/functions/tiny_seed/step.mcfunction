@@ -1,4 +1,4 @@
-scoreboard players set #seedCalcdBool DGvar 0
+scoreboard players set #chunkSeedCalcd DGvar 0
 function #dynagen_utils:tiny_pop
 
 scoreboard players add #xChunk DGvar 1

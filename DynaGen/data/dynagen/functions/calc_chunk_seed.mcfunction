@@ -160,3 +160,6 @@ scoreboard players operation #seedCalcLoX DGvar += #seedCalcHiX DGvar
 scoreboard players operation #seedCalcLoZ DGvar += #seedCalcHiZ DGvar
 scoreboard players operation #seedCalcLoX DGvar *= 65536 const
 scoreboard players operation #seedCalcLoX DGvar += #seedCalcLoZ DGvar
+
+#makes sure calculating the chunk seed only happens once per chunk
+scoreboard players add #chunkSeedCalcd DGvar 1

@@ -3,5 +3,5 @@
 #NOTE: must be called explicitly if your pack has any method of teleporting players to unexplored chunks
 
 #summons marker entity to run from
-execute if score #dgEnabled DGvar matches 1 run summon area_effect_cloud ~ ~ ~ {Particle:"block air",Tags:["dynagen_marker"]}
-execute as @e[distance=..1,type=area_effect_cloud,tag=dynagen_marker] run function dynagen:align_marker
+execute if score #dgEnabled DGvar matches 1 run summon area_effect_cloud ~ ~ ~ {Particle:"block air",Tags: ["dynagen_marker"]}
+execute as @e[distance=0,type=area_effect_cloud,tag=dynagen_marker] run function dynagen:align_marker

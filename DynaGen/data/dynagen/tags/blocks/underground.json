@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dirt",
+    "minecraft:stone",
+    "minecraft:gravel",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:andesite",
+    "minecraft:coal_ore",
+    "minecraft:iron_ore",
+    "minecraft:gold_ore",
+    "minecraft:lapis_ore",
+    "minecraft:redstone_ore",
+    "minecraft:emerald_ore",
+    "minecraft:diamond_ore",
+    "minecraft:netherrack",
+    "minecraft:nether_quartz_ore",
+    "minecraft:magma_block",
+    "minecraft:end_stone"
+  ]
+}

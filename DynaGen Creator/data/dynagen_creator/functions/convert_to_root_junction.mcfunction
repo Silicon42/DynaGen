@@ -1,8 +1,5 @@
 #converts the jukebox block to Dynagen's Junction format using the completed Master Lists
 
-#change the block to a root junction block (barrel w/ item for NBT storage)
-setblock ~ ~ ~ barrel{Items:[{id:"book",Count:1b,tag:{LootList:[],JunctionList:[]}}]}
-
 #get the current position from the block
 data modify storage dynagen_creator: JunctionTemp set from block ~ ~ ~
 execute store result score #xCoord DGCvar run data get storage dynagen_creator: JunctionTemp.x
@@ -16,9 +13,9 @@ data modify storage dynagen_creator: MJLcopy set from storage dynagen_creator: M
 #make the local versions of the lists
 data modify storage dynagen_creator: ItemData set value {LootList:[],JunctionList:[]}
 execute store result score #listIndex DGCvar run data get storage dynagen_creator: MasterLootList
-function dynagen_creator:make_local_loot_list
+execute if score #listIndex DGCvar matches 1.. run function dynagen_creator:make_local_loot_list
 execute store result score #listIndex DGCvar run data get storage dynagen_creator: MasterJunctionList
-function dynagen_creator:make_local_junction_list
+execute if score #listIndex DGCvar matches 1.. run function dynagen_creator:make_local_junction_list
 
 #copy the new local lists to the item's "tag" NBT tag
 data modify block ~ ~ ~ Items[0].tag set from storage dynagen_creator: ItemData

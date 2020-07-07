@@ -8,8 +8,9 @@ scoreboard players set #packSalt DGvar 0
 # and ommit next scoreboard and execute commands
 function dynagen:lib/get_pack_chunk_seed
 
-# this gives your structure a chance to spawn of (the size of your match range)/(<chance> const)
-# NOTE: please remember to change the name of <chance> to the value of your constant and add it to the scoreboard if it's not there already, this is to ensure that it does not conflict with other packs
-scoreboard players operation #chunkSeed DGvar %= <chance> const
+# this gives your structure a chance to spawn of (the size of your match range)/(#chance DGTemplateVar)
+# NOTE: please remember to change the name of #chance DGTemplateVar and set the value of your constant and add it to the scoreboard if it's not there already, this is to ensure that it does not conflict with other packs
+scoreboard players operation #chunkSeed DGvar %= #chance DGTemplateVar
 # if you want the structure placed at a fixed height, there is no need for a placement function, instead run your load function
-execute if score #chunkSeed DGvar matches 0 run function dg_templates:entity_placement_shim_structname
+execute if score #chunkSeed DGvar matches 0 run function dg_templates:complex/entity_placement_shim
+execute if score #chunkSeed DGvar matches 1..3 run function dg_templates:basic/entity_placement_shim

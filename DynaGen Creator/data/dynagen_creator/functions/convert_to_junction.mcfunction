@@ -1,7 +1,4 @@
-#converts the jigsaw block to Dynagen's Junction format using the completed Master Lists
-
-#change the block to a junction block (jukebox w/ item for NBT storage)
-setblock ~ ~ ~ jukebox{RecordItem:{id:"book",Count:1b,tag:{LootList:[],JunctionList:[]}}}
+#converts the special chain_command_block to Dynagen's Junction format using the completed Master Lists
 
 #get the current position from the block
 data modify storage dynagen_creator: JunctionTemp set from block ~ ~ ~
@@ -16,9 +13,9 @@ data modify storage dynagen_creator: MJLcopy set from storage dynagen_creator: M
 #make the local versions of the lists
 data modify storage dynagen_creator: ItemData set value {LootList:[],JunctionList:[]}
 execute store result score #listIndex DGCvar run data get storage dynagen_creator: MasterLootList
-function dynagen_creator:make_local_loot_list
+execute if score #listIndex DGCvar matches 1.. run function dynagen_creator:make_local_loot_list
 execute store result score #listIndex DGCvar run data get storage dynagen_creator: MasterJunctionList
-function dynagen_creator:make_local_junction_list
+execute if score #listIndex DGCvar matches 1.. run function dynagen_creator:make_local_junction_list
 
 #copy the new local lists to the item's "tag" NBT tag
-data modify block ~ ~ ~ RecordItem.tag set from storage dynagen_creator: ItemData
+data modify block ~ ~ ~ RecordItem.tag merge from storage dynagen_creator: ItemData

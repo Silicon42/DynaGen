@@ -24,7 +24,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Convert To Auto\"}'}}"
+                "tag": "{display:{Name:'{\"text\":\"Junction Block\"}'}}"
               }
             ]
           }
@@ -39,18 +39,9 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Root Junction\"}'},RecordItem:{id:\"minecraft:book\",Count:1b,tag:{RootJunction:1b}}}"
+                "tag": "{display:{Name:'{\"text\":\"Root Junction\"}'},BlockEntityTag:{RecordItem:{id:\"minecraft:book\",Count:1b,tag:{RootJunction:1b}}}}"
               }
             ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:jigsaw"
           }
         ]
       },

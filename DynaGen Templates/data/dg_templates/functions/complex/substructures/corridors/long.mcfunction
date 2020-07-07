@@ -9,10 +9,14 @@ execute store result score #direction DGvar run data get storage dynagen: Juncti
 #    DynaGen Creator's scan_structure function
 #TODO: fix the offsets and rotation of the structure blocks to actually load the real structure properly once the
 #    pre-processor can pre-make the data tags
-execute if score #direction DGvar matches 0 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long"}
-execute if score #direction DGvar matches 1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long"}
-execute if score #direction DGvar matches -2147483648 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long"}
-execute if score #direction DGvar matches -1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long"}
+#South facing junction
+execute if score #direction DGvar matches 0 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long",posX:1,posY:-1,posZ:0,rotation:"CLOCKWISE_90"}
+#West facing junction
+execute if score #direction DGvar matches 1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long",posX:0,posY:-1,posZ:1,rotation:"CLOCKWISE_180"}
+#North facing junction
+execute if score #direction DGvar matches -2147483648 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long",posX:-1,posY:-1,posZ:0,rotation:"COUNTERCLOCKWISE_90"}
+#East facing junction
+execute if score #direction DGvar matches -1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/corridors/long",posX:0,posY:-1,posZ:-1,rotation:"NONE"}
 
 # must be placed above or below to prevent directionality issues
 setblock ~ ~-1 ~ redstone_block

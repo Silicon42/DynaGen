@@ -7,11 +7,10 @@
 #South/no root junction assumes default orientation
 #NOTE: will break loading substurctures if orientation doesn't match expected values
 #TODO: tie checking the orientation to a flag so that the above problem can't happen
-#execute if block ~ ~ ~ barrel[facing=south] run 
-scoreboard players set #direction DGvar 0
-execute if block ~ ~ ~ barrel[facing=west] run scoreboard players set #direction DGvar 1073741824
-execute if block ~ ~ ~ barrel[facing=north] run scoreboard players set #direction DGvar -2147483648
-execute if block ~ ~ ~ barrel[facing=east] run scoreboard players set #direction DGvar -1073741824
+execute if block ~ ~ ~ barrel[facing=north] run scoreboard players set #direction DGvar 0
+execute if block ~ ~ ~ barrel[facing=east] run scoreboard players set #direction DGvar 1073741824
+execute if block ~ ~ ~ barrel[facing=south] run scoreboard players set #direction DGvar -2147483648
+execute if block ~ ~ ~ barrel[facing=west] run scoreboard players set #direction DGvar -1073741824
 #get the list data and the root location
 data modify storage dynagen: RootJunction set from block ~ ~ ~
 execute store result score #xCoord DGvar run data get storage dynagen: RootJunction.x

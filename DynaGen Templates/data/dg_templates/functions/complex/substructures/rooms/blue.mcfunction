@@ -9,10 +9,14 @@ execute store result score #direction DGvar run data get storage dynagen: Juncti
 #    DynaGen Creator's scan_structure function
 #TODO: fix the offsets and rotation of the structure blocks to actually load the real structure properly once the
 #    pre-processor can pre-make the data tags
-execute if score #direction DGvar matches 0 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue"}
-execute if score #direction DGvar matches 1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue"}
-execute if score #direction DGvar matches -2147483648 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue"}
-execute if score #direction DGvar matches -1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue"}
+#South facing junction
+execute if score #direction DGvar matches 0 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue",posX:5,posY:-1,posZ:9,rotation:"CLOCKWISE_180"}
+#West facing junction
+execute if score #direction DGvar matches 1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue",posX:-9,posY:-1,posZ:5,rotation:"CLOCKWISE_90"}
+#North facing junction
+execute if score #direction DGvar matches -2147483648 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue",posX:-5,posY:-1,posZ:-9,rotation:"NONE"}
+#East facing junction
+execute if score #direction DGvar matches -1073741824 run setblock ~ ~ ~ structure_block{mode:"LOAD",name:"dg_templates:complex/rooms/blue",posX:9,posY:-1,posZ:-5,rotation:"COUNTERCLOCKWISE_90"}
 
 # must be placed above or below to prevent directionality issues
 setblock ~ ~-1 ~ redstone_block

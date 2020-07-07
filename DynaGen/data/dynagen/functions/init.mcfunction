@@ -8,10 +8,10 @@ scoreboard objectives add const dummy
 # should only be enabled once you are done protecting areas that you wish to remain unmodified
 # setting this back to 0 will only stop warp based spreading NOT load detector based spreading
 # is normally set when enable_terrain_mods.mcfunction is run
-scoreboard players set #dgEnabled DGvar 0
+#scoreboard players set #dgEnabled DGvar 0
 
 #custom generation in the End is currently WIP, but not yet ready
-scoreboard players set #endEnabled DGvar 0
+#scoreboard players set #endEnabled DGvar 0
 
 #2^16
 scoreboard players set 65536 const 65536

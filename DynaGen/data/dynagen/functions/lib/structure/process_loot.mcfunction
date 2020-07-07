@@ -5,7 +5,7 @@ execute if score #direction DGvar matches 0 run function dynagen:lib/structure/r
 execute if score #direction DGvar matches 1073741824 run function dynagen:lib/structure/rotated_offset_90
 execute if score #direction DGvar matches -2147483648 run function dynagen:lib/structure/rotated_offset_180
 execute if score #direction DGvar matches -1073741824 run function dynagen:lib/structure/rotated_offset_-90
-execute store result score #yOffset DGvar run data get storage dynagen: IndexList[0].Pos[1]
+execute store result score #yOffset DGvar run data get storage dynagen: IndexList[0].Offset.y
 scoreboard players operation #xOffset DGvar += #xCoord DGvar
 scoreboard players operation #yOffset DGvar += #yCoord DGvar
 scoreboard players operation #zOffset DGvar += #zCoord DGvar

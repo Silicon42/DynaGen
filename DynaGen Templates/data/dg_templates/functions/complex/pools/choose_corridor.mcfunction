@@ -8,4 +8,3 @@ scoreboard players operation #junctionSeed DGvar = #lcgSeed DGvar
 scoreboard players operation #junctionSeed DGvar %= #complexCorridor DGTemplateVar
 execute if score #junctionSeed DGvar matches 0..2 run function dg_templates:complex/substructures/corridors/long
 execute if score #junctionSeed DGvar matches 3..4 run function dg_templates:complex/substructures/corridors/short
-#execute if score #junctionSeed DGvar matches 4 run function dg_templates:complex/substructures/corridors/t_intersection

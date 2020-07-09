@@ -28,6 +28,6 @@ function dynagen:lib/structure/read_root_index
 # remove the barrel if not being handled by anything else
 #setblock ~ ~ ~ dirt
 # set the max number of rolls away from the root that the structure can generate
-scoreboard players set #rollDepth DGvar 3
+scoreboard players set #rollDepth DGvar 4
 function dg_templates:complex/process_junction_rolls
-function dg_templates:complex/cap_remaining_junctions
+#function dg_templates:complex/cap_remaining_junctions
